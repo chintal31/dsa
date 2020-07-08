@@ -16,6 +16,7 @@ class MaxBinaryHeap {
     }
     return this.values;
   }
+
   findParent(no) {
     return parseInt((no - 1) / 2);
   }
