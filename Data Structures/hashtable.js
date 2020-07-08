@@ -28,6 +28,7 @@ class Hashtable {
     }
     return Math.abs((total * 7) % this.keyMap.length);
   }
+
   set(key, value) {
     let index = this.hash(key);
     if (!this.keyMap[index]) {
@@ -36,6 +37,7 @@ class Hashtable {
     this.keyMap[index].push([key, value]);
     return this.keyMap;
   }
+
   get(key) {
     let index = this.hash(key);
     let value = this.keyMap[index].map((subArr) => {
@@ -43,6 +45,7 @@ class Hashtable {
     });
     return value[0];
   }
+
   keys() {
     return this.keyMap
       .map((subArr) => {
@@ -51,6 +54,7 @@ class Hashtable {
       .filter((key) => key)
       .flat();
   }
+
   values() {
     return this.keyMap
       .map((subArr) => {
