@@ -1,2 +1,2 @@
 # dsa
-Here I post my learning's of data structures and algorithms which helps me to refer and manage my code anywhere anytime!
+Here I post my learning's of data structures and algorithms which helps me to revise and manage my learnings anywhere anytime!
